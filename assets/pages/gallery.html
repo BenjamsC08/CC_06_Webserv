@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rat Services - Gallery</title>
+
+<link rel="stylesheet" type="text/css" href="/css/{{THEME_FILENAME}}">
+</head>
+<body>
+
+    <div class="window">
+        <div class="title-bar">
+            <span>Exploring - C:\RAT_SERVICES\UPLOADS</span>
+            <div class="title-bar-controls">
+                <button>_</button>
+                <button>&#9633;</button>
+                <button>X</button>
+            </div>
+        </div>
+        
+        <div class="menu-bar">
+            <span>File</span>
+            <span>Edit</span>
+            <span>View</span>
+            <span>Go</span>
+            <span>Favorites</span>
+            <span>Help</span>
+        </div>
+
+        <!-- Toolbar -->
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; padding: 10px 5px; border-bottom: 2px solid #808080;">
+            
+            <div style="padding-bottom: 5px;">
+                <a href="index.html" class="win-button" style="min-width: 80px;">
+                    &lt; Back to Home
+                </a>
+            </div>
+        
+            <div style="text-align: right; border-left: 1px solid #ffffff; padding-left: 15px; box-shadow: inset 1px 0 0 #808080;">
+                <form action="/upload/" method="POST" enctype="multipart/form-data" style="margin: 0;">
+                    <label for="rat-file" style="display: block; margin-bottom: 3px; font-weight: bold;">
+                        Submit Rat Data:
+                    </label>
+                    <input type="file" id="rat-file" name="file"
+                           style="font-size: 10px; background: #fff; border: 1px solid #808080;">
+                    <button type="submit" class="win-button" style="margin-left: 5px;">
+                        Upload
+                    </button>
+                </form>
+            </div>

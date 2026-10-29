@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Form urlencoded test</title>
+</head>
+<body>
+	<h1>POST application/x-www-form-urlencoded</h1>
+
+	<form method="POST"
+		  action="/cgi-bin/echo.py"
+		  enctype="application/x-www-form-urlencoded">
+		<label>
+			Name:
+			<input type="text" name="name" value="mat">
+		</label>
+		<br>
+
+		<label>
+			Message:
+			<input type="text" name="message" value="hello world">
+		</label>
+		<br>
+
+		<label>
+			Special:
+			<input type="text" name="special" value="é & = ? ! /">
+		</label>
+		<br>
+
+		<label>
+			Empty:
+			<input type="text" name="empty" value="">
+		</label>
+		<br>
+
+		<button type="submit">Send</button>
+	</form>
+</body>
+</html>
